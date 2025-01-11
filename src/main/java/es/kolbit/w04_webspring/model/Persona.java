@@ -9,7 +9,16 @@ public class Persona {
 	private String apellidos;
 	private String telefono;
 	private String domicilio;
-	
+
+	public Persona() {
+	}
+
+	public Persona(String nombre, String apellidos) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+	}
+
 	public Persona(Integer id, String nombre, String apellidos) {
 		super();
 		this.id = id;
