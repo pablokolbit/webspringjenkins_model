@@ -23,5 +23,14 @@ public class TestPersona {
 		Assertions.assertEquals(15, p.getId());
 	}
 	
+	@DisplayName("Verifica el 'getTelefono()' y 'setTelefono()' de 'Persona'")
+	@Test
+	public void test03() {
+		Persona p = new Persona(15, "Pepe", "Lopez");
+		p.setTelefono("123456789");
+		
+		Assertions.assertEquals("123456789", p.getTelefono());
+	}
+	
 	
 }
